@@ -1,0 +1,42 @@
+---
+import '../styles/museum.css';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="An interactive museum of conclusions that are almost right. Change one assumption. Watch the evidence tell a different story." />
+  <meta name="color-scheme" content="light dark" /><title>Museum of Almost Right — Change the assumption</title>
+</head>
+<body>
+  <a class="skip" href="#main-content">Skip to main content</a>
+  <header class="masthead wrap"><a class="wordmark" href={import.meta.env.BASE_URL} aria-label="Museum of Almost Right home"><span class="mark" aria-hidden="true">≈</span><span>Museum of<br /><strong>Almost Right</strong></span></a><a href="#about" class="quiet-link">About this collection ↘</a></header>
+  <main class="wrap" id="main-content" tabindex="-1">
+    <section class="intro" aria-labelledby="intro-title"><div><p class="eyebrow">A collection of missing conditions</p><h1 id="intro-title">Looks right.<br /><em>Under what assumptions?</em></h1></div><p class="intro-note">Small datasets. Convincing conclusions.<br />Take a position, then change one condition and see what holds up.</p></section>
+    <div class="collection-bar"><p id="collection-status" role="status" aria-live="polite">Opening the collection…</p><button id="reload" class="text-button" type="button">Reload exhibits ↻</button></div>
+    <div id="load-error" class="notice" role="alert" hidden></div><p id="empty" class="empty" hidden>No verified exhibits have been published yet. Try Reload exhibits after the collection is published.</p>
+    <div id="exhibition" class="exhibition" hidden tabindex="-1">
+      <aside class="index"><p class="eyebrow">The collection</p><nav id="exhibit-nav" aria-label="Choose an exhibit"></nav><p class="index-note">All evidence is synthetic.<br />Your choices stay on this page.</p></aside>
+      <article class="exhibit" aria-labelledby="exhibit-title">
+        <div class="exhibit-heading"><p id="category" class="eyebrow"></p><span id="position" class="position"></span></div><h2 id="exhibit-title" tabindex="-1"></h2>
+        <div class="claim"><span class="eyebrow">The claim on the label</span><blockquote id="claim"></blockquote></div>
+        <div class="evidence-tray"><div class="tray-heading"><h3 id="evidence-title">The evidence</h3><span class="small-tag">Synthetic data</span></div><div id="table-region" class="table-region" tabindex="0" role="region" aria-label="Evidence table"></div><p id="origin" class="caption"></p></div>
+        <fieldset class="judgment" id="judgment"><legend>Does the evidence support the claim?</legend><div class="choice-row"><button type="button" data-choice="supported" aria-pressed="false">It holds up</button><button type="button" data-choice="unsupported" aria-pressed="false">It doesn't hold up</button><button type="button" data-choice="conditional" aria-pressed="false">It depends</button></div></fieldset>
+        <div class="reveal-bar"><p id="choice-feedback">There is no score. Look for the condition that matters.</p><button id="reveal" type="button" class="primary">Open the evidence notes ↓</button></div>
+        <section id="notes" class="notes" aria-labelledby="notes-title" hidden>
+          <div class="notes-top"><h3 id="notes-title" tabindex="-1">Change the assumption.</h3><span class="small-tag">Same source data</span></div>
+          <div id="interpretations" class="interpretation-tabs" role="group" aria-label="Choose an interpretation"></div>
+          <div class="calculation" aria-live="polite" aria-atomic="true"><p id="assumption" class="assumption"></p><div class="result-line"><span class="eyebrow">Calculated result</span><output id="result"></output></div><ol id="steps" class="steps"></ol><p id="verdict" class="verdict"></p><p id="explanation"></p></div>
+          <div class="takeaway"><span class="eyebrow">What the label left out</span><p id="takeaway"></p></div>
+          <details><summary>Sources &amp; provenance</summary><ul id="sources"></ul><p class="caption">Calculations are checked against the published expected results. This is an automated consistency check, not independent human review.</p></details>
+        </section>
+        <div class="exhibit-footer"><button id="reset" class="text-button" type="button">Reset this exhibit</button><button id="next" class="next-button" type="button">Next exhibit →</button></div>
+      </article>
+    </div>
+    <section id="about" class="about" aria-labelledby="about-title"><p class="eyebrow">About the collection</p><h2 id="about-title">A result can be exact.<br />Its interpretation can still be incomplete.</h2><div class="about-copy"><p>This small museum invites you to inspect the assumptions behind everyday data operations. Every exhibit uses invented data; none makes a claim about real people or organizations.</p><p>Evidence, interpretations and exhibit labels are published through Sanity. The calculations run in your browser. Reload reads the latest published collection; choosing an interpretation makes no additional request.</p><p>Created with AI assistance by Codex on behalf of Jianqiang for the DEV × Sanity Challenge. No personal answers are collected. This is an educational demonstration, not a validated assessment.</p></div></section>
+  </main>
+  <footer class="wrap site-footer"><span>Museum of Almost Right</span><span>Take the conditions with you.</span></footer>
+  <noscript><p class="notice">JavaScript is needed to load the published exhibits and calculate the alternate interpretations.</p></noscript>
+  <script>import '../scripts/museum.js';</script>
+</body>
+</html>
