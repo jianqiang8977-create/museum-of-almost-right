@@ -49,3 +49,10 @@ Design uses original CSS and system fonts, with editorial hierarchy informed by 
 ## License
 
 Original code and content are available under the MIT license. Dependencies retain their own licenses. Third-party reference pages are linked, not republished.
+## Live project
+
+- Public demo: https://jianqiang8977-create.github.io/museum-of-almost-right/
+- Content Studio (authorized editors only): https://almost-right-jianqiang.sanity.studio/
+- Studio setup and publishing: [studio/README.md](studio/README.md)
+
+The frontend is public and needs no visitor account. See the verification record for actual deployment and content-update evidence; Studio network warnings remain a known environment limitation.
