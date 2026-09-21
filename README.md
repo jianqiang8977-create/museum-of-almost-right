@@ -56,3 +56,5 @@ Original code and content are available under the MIT license. Dependencies reta
 - Studio setup and publishing: [studio/README.md](studio/README.md)
 
 The frontend is public and needs no visitor account. See the verification record for actual deployment and content-update evidence; Studio network warnings remain a known environment limitation.
+
+- Published challenge writeup: https://dev.to/jianqiang8977/museum-of-almost-right-change-an-assumption-change-the-answer-2cck

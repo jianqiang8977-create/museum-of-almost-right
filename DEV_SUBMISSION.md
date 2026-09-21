@@ -1,6 +1,6 @@
 ---
 title: "Museum of Almost Right: change an assumption, change the answer"
-published: false
+published: true
 tags: devchallenge, sanitychallenge, sanity, ai
 ---
 

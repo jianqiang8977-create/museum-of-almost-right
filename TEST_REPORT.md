@@ -33,4 +33,4 @@ Pending: mobile/reduced-motion and complete keyboard journeys; public deployment
 - Reduced-motion CSS was inspected; OS/browser reduced-motion behavior and dark mode have not been exercised. Complete keyboard traversal and screen-reader testing remain unverified.
 - Actual public screenshot: docs/screenshots/public-exhibit.png. The temporary viewport fixture was removed and not committed.
 
-DEV submission remains pending until the public article is published and read back. No prize or payment is claimed.
+DEV article published at https://dev.to/jianqiang8977/museum-of-almost-right-change-an-assumption-change-the-answer-2cck on 2026-09-21T22:47:33Z. Reopened in Chrome with all four tags, project ID and Fully Autonomous disclosure. Anonymous official article API returned HTTP 200, article 4710695, and its Markdown body exactly matched the reviewed source. No prize or payment is claimed.
